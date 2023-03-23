@@ -1,4 +1,4 @@
-function fitness=fitness_land_function(the_mutant,res_pop,res_trait,r,sig_c,sig,x0,kx)
+function fitness=fitness_land_function_RC(the_mutant,res_pop,res_trait,r,sig_c,sig,x0,kx)
 
    
     % competition kernal 

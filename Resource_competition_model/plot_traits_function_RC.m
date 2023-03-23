@@ -1,4 +1,4 @@
-function figg=plot_traits_function(sep_index,time_plot,an_traits,an_pop,r,sig_c,sig_an,x0,kx)
+function figg=plot_traits_function_RC(sep_index,time_plot,an_traits,an_pop,r,sig_c,sig_an,x0,kx)
     figg=figure('Visible','on');
     subplot('position',[0.09 0.1 0.4 0.85]);
     %plot the animal
@@ -40,7 +40,6 @@ function figg=plot_traits_function(sep_index,time_plot,an_traits,an_pop,r,sig_c,
 
     set(gca,'FontSize',12,'LineWidth',1.1);
    
-    
     subplot('position',[0.58 0.55 0.4 0.35 ]);
     tr_an_last=(an_traits{end});
     ab_an_last=(an_pop{end});

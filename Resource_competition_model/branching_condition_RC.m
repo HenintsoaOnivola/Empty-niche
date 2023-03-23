@@ -1,4 +1,4 @@
-function info=branching_condition(INI,rA,sig_c_an,sig_an,x0,kx,animal)
+function info=branching_condition_RC(INI,rA,sig_c_an,sig_an,x0,kx,animal)
   
     % competition kernal 
     alphaA=@(sig_c_an,x1,x2) exp(-(1/(2*sig_c_an^2))*((x1-x2).^2));

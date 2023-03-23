@@ -1,4 +1,4 @@
-function sg=selection_gradient_function(IN,rA,sig_c_an,sig_an,x0,kx,animal)
+function sg=selection_gradient_function_RC(IN,rA,sig_c_an,sig_an,x0,kx,animal)
 
     alphaA=@(sig_c_an,x1,x2) exp(-(1/(2*sig_c_an^2))*((x1-x2).^2));
     alphaA_prime=@(sig_c_an,x1,x2) -(1/sig_c_an^2)*(x1-x2).*alphaA(sig_c_an,x1,x2);

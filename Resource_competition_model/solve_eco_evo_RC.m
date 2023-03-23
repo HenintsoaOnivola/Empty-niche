@@ -1,4 +1,4 @@
-function [time, solution,TE,YE,IE]=solve_eco_evo(INI,rA,sig_c_an,sig_an,x0,kx,animal,past_time,the_count_integrate,count_sys)
+function [time, solution,TE,YE,IE]=solve_eco_evo_RC(INI,rA,sig_c_an,sig_an,x0,kx,animal,past_time,the_count_integrate,count_sys)
 
   
 
@@ -50,8 +50,6 @@ function [time, solution,TE,YE,IE]=solve_eco_evo(INI,rA,sig_c_an,sig_an,x0,kx,an
     end
   
 
-    
-
     options=odeset('Events', @events);
     
     function [value,isterminal,direction]=events(t,y)
@@ -78,8 +76,6 @@ function [time, solution,TE,YE,IE]=solve_eco_evo(INI,rA,sig_c_an,sig_an,x0,kx,an
         count_conv=0;
         for i=1:animal
             if abs(sel_gr(i))<10^(-8)
-                
-                %disp (abs(sel_gr(i)));
                 count_conv=count_conv+1;
             end
         end
@@ -92,7 +88,7 @@ function [time, solution,TE,YE,IE]=solve_eco_evo(INI,rA,sig_c_an,sig_an,x0,kx,an
             end
         else
         
-            if count_conv==animal  
+            if count_conv==animal 
                 value(2)=0;
             else
                 value(2)=1;
@@ -114,7 +110,6 @@ function [time, solution,TE,YE,IE]=solve_eco_evo(INI,rA,sig_c_an,sig_an,x0,kx,an
             value(3)=1;
         end
         
-       
         isterminal=ones(size(value));
         direction=zeros(size(value));
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,7 +120,6 @@ function [time, solution,TE,YE,IE]=solve_eco_evo(INI,rA,sig_c_an,sig_an,x0,kx,an
         
         A=IN(1:animal);
         x=IN(animal+1:end);
-        
         
         A=transpose(A);
         x=transpose(x);
