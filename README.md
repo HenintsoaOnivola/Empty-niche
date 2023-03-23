@@ -3,7 +3,6 @@ Matlab scripts enclosed in this repository are those used to generate the data a
 
 The codes were run using Matlab 2020b on a device with the following specifications:
 OS:  Windows 10 64-bit, Processor: Intel Core i5-10210U CPU @ 1.60GHz 2.10GHz, RAM: 8Gb
--------------------------------------------------------------
 
 To generate the simulated communities, the scripts should be run in the following order:
 
@@ -23,7 +22,7 @@ This code runs over all ranges of parameters for both the two cases of resource 
 are created and data on trait values and population densities are stored in there.
 This code took approximately 9 hours to run.
 
--Run 'main_resource_competition_model.m' located within the folder 'Resource_competition_model' to simulate under a model where there is only competition and no mutualism.
+- Run 'main_resource_competition_model.m' located within the folder 'Resource_competition_model' to simulate under a model where there is only competition and no mutualism.
 This will create a folder named 'Results_RC' where trait values and population densities are stored. It runs only over one set of parameter, the one needed to plot figure2.
 This code takes approximately 40 seconds to run. 
  
@@ -44,6 +43,6 @@ This code takes approximately 40 seconds to run.
 'Plot_Fig6.m' takes approximately 1h20mn to run.
 
 - To generate the figures in the supplementary material B (Figures B1 to B11), i.e. before running 'Plot_FigB...', it is required that data are available in the folders 'Results_intra_guild', 'Results_cross_guild', 'Results_invasion_intra_guild' and 'Results_invasion_cross_guild'.  
-_ To generate the figures in the supplementary materia C (Figures C1 to C5), i.e. before running 'Plot_FigC...', the code 'robustness_test.m' shoudl be run first. This code will generate the additional data needed for the robustness analysis. 
+- To generate the figures in the supplementary materia C (Figures C1 to C5), i.e. before running 'Plot_FigC...', the code 'robustness_test.m' shoudl be run first. This code will generate the additional data needed for the robustness analysis. 
 
 
