@@ -28,6 +28,6 @@ For example, run 'Plot_Fig1.m' to plot figure 1, or 'Plot_Fig2.m' to plot figure
   * Plotting figure 5 requires that all data are present in the folders 'Results_intra_guild', 'Results_cross_guild', 'Results_invasion_intra_guild' and 'Results_invasion_cross_guild'. 'Plot_Fig5.m' takes approximately 36 minutes to run.
   * Plotting figure 6 requires that all data are present in the folders 'Results_intra_guild', 'Results_cross_guild', 'Results_invasion_intra_guild' and 'Results_invasion_cross_guild'. 'Plot_Fig6.m' creates two folders: 'Selection_pressure_intra_guild' and 'Selection_pressure_cross_guild' which store the values of the selection gradients over time, before producing figure 6. 'Plot_Fig6.m' takes approximately 1h20mn to run.
 
-- Run 'Plot_FigB(figure number).m' to produce figures in the supplementary material B (Figures B1 to B11). It requires that data are available in the folders 'Results_intra_guild', 'Results_cross_guild', 'Results_invasion_intra_guild' and 'Results_invasion_cross_guild'.
+- Run 'Plot_FigB(figure number).m' to produce figures in the supplementary material B (Figures B1 to B10). It requires that data are available in the folders 'Results_intra_guild', 'Results_cross_guild', 'Results_invasion_intra_guild' and 'Results_invasion_cross_guild'.
 
 - Run 'Plot_FigC(figure number).m' to produce figures in the supplementary material C (Figures C1 to C5). Note, the code 'robustness_test.m' should be run first before producing these figures. This code will generate additional data needed for the robustness analysis.
