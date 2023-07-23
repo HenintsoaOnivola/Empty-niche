@@ -77,9 +77,7 @@ while line_ind<=length(file_content)
         end
         count_pair=count_pair+1;
     end
-
     line_ind=line_ind+7;
-
 end
 
 
@@ -192,26 +190,22 @@ for each_line=1:length(all_trait)
     cons_points=cons_points(1:(un_ind-1),:);
     if rem(count,3)==1
         if size(cons_points,1)>1
-            arrowh(cons_points(:,1),cons_points(:,2),[0.4 0.4 0.4],[100 150],70);
+            arrowh(cons_points(:,1),cons_points(:,2),[0.4 0.4 0.4],[100 50],70);
         end
     end
     count=count+1;
-
 end
 
 %plot equi points
 for eq=1:length(equi_points)
-
-    plot(equi_points{eq}(1),equi_points{eq}(2),'ko','MarkerFaceColor','k','MarkerSize',5,'LineWidth',1.2);
+    plot(equi_points{eq}(1),equi_points{eq}(2),'ko','MarkerFaceColor','k', 'MarkerEdgeColor','k','MarkerSize',5);
     hold on;
-
 end
 
-xlabel('Animal trait value (x)','FontSize',12);
-ylabel('Plant trait value (y)','FontSize',12);
+xlabel('Animal trait value,{\it x}','FontSize',12);
+ylabel('Plant trait value,{\it y}','FontSize',12);
 
 axis([2 4 1 3]);
-
 
 set(gca,'XTick',1:1:4,'FontSize',10);
 set(gca,'YTick',1:1:4,'FontSize',10);
@@ -233,5 +227,3 @@ print(plot_name,'-dpng','-r400');
 
 clf;
 delete('data_for_FigB1.dat');
-
-            
