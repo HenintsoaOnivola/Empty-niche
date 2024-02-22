@@ -1,6 +1,6 @@
 ## Matlab scripts for simulation and visualisation in the manuscript "False friends: How mutualism impedes community assembly and creates empty niches for invasion" 
 ### by H.O. Minoarivelo, U. Dieckmann, and C. Hui
-(sumitted for review in The American Naturalist)
+(submitted for review in The American Naturalist)
 -------------------------------------------------------------
 The codes were run using Matlab 2020b on a device with the following specifications:
 OS:  Windows 10 64-bit, Processor: Intel Core i5-10210U CPU @ 1.60GHz 2.10GHz, RAM: 8Gb.
